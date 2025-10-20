@@ -1,0 +1,22 @@
+# Nmap 7.94SVN scan initiated Mon Oct 20 15:59:46 2025 as: nmap -sV -p 53,135,445 -oN svc_versions.txt 10.0.2.1 10.0.2.2
+Nmap scan report for _gateway (10.0.2.1)
+Host is up (0.00098s latency).
+
+PORT    STATE  SERVICE      VERSION
+53/tcp  open   domain       Cloudflare public DNS
+135/tcp closed msrpc
+445/tcp closed microsoft-ds
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.2
+Host is up (0.00039s latency).
+
+PORT    STATE    SERVICE       VERSION
+53/tcp  filtered domain
+135/tcp open     msrpc         Microsoft Windows RPC
+445/tcp open     microsoft-ds?
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 20 15:59:54 2025 -- 2 IP addresses (2 hosts up) scanned in 7.53 seconds
